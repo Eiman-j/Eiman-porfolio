@@ -56,7 +56,7 @@ async function sendMessage() {
         chatMessages.scrollTop = chatMessages.scrollHeight;
 
         // 2. Send data to Flask backend
-        const response = await fetch('/chat', {
+        const response = await fetch('https://eiman-porfolio-backend.onrender.com/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
