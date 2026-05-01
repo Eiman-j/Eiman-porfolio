@@ -9,7 +9,16 @@ from email.message import EmailMessage
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/*": {
+        "origins": [
+            "https://eiman-j.github.io",  # Your live frontend
+            "http://127.0.0.1:5000",      # For local testing
+            "http://localhost:5000",
+            "http://localhost:3000"
+        ]
+    }
+})
 
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 model = genai.GenerativeModel('gemini-2.5-flash')
@@ -79,7 +88,6 @@ def chat_endpoint():
                     smtp.login(MY_EMAIL, MY_PASSWORD)
                     smtp.send_message(msg)
                 
-                # Update the AI's reply to confirm the email was sent
                 return jsonify({"reply": "Got it! I've securely emailed your message directly to Eiman. She will see it in her inbox soon."})
                 
             except Exception as e:
