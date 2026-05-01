@@ -1,4 +1,3 @@
-// ─── CHAT UI TOGGLE LOGIC ───
 const chatToggle = document.getElementById('chat-toggle');
 const chatWindow = document.getElementById('chat-window');
 const chatClose = document.getElementById('chat-close');
@@ -35,7 +34,7 @@ document.querySelectorAll('#chat-toggle, #chat-close, #chat-send').forEach(el =>
     });
 });
 
-// ─── AI CHAT FUNCTIONALITY ───
+
 async function sendMessage() {
     const message = chatInput.value.trim();
 
@@ -46,7 +45,7 @@ async function sendMessage() {
     chatInput.value = ''; // clear input
 
     try {
-        // Show a temporary "typing..." indicator (optional but cool)
+        // Show a temporary "typing..." indicator
         const chatMessages = document.getElementById('chat-messages');
         const typingDiv = document.createElement('div');
         typingDiv.id = "typing-indicator";

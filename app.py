@@ -1,6 +1,6 @@
 import os
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS  # <-- Add this line
+from flask_cors import CORS  
 import google.generativeai as genai
 from dotenv import load_dotenv
 
@@ -38,7 +38,6 @@ chat = model.start_chat(history=[
 
 @app.route('/')
 def index():
-    # Serves your portfolio HTML
     return render_template('index.html')
 
 @app.route('/chat', methods=['POST'])
@@ -47,20 +46,16 @@ def chat_endpoint():
     if not user_msg:
         return jsonify({"reply": "Please provide a message."}), 400
 
-    # 2. Hardcoded trigger for the "Leave a Message" feature
     if user_msg.strip().upper().startswith("MESSAGE:"):
         # Extract the actual message
         saved_note = user_msg[8:].strip()
         
-        # Here you can save it to a PostgreSQL database, a simple text file, or email it to yourself.
         with open("visitor_messages.txt", "a") as f:
             f.write(f"New Message: {saved_note}\n")
             
         return jsonify({"reply": "Got it! I've securely saved your message. Eiman will see it soon."})
 
-    # 3. Standard Chatbot Flow
     try:
-        # Send the user's message to Gemini
         response = chat.send_message(user_msg)
         return jsonify({"reply": response.text})
     except Exception as e:
