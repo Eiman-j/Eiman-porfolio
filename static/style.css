@@ -1221,29 +1221,48 @@
 }
 
 
+@media (pointer: coarse), (max-width: 900px) {
+  body, a, button, .nav-cta, .btn-primary, .chat-toggle-btn, .chat-close-btn, #chat-send {
+    cursor: auto !important; /* Brings back normal tapping */
+  }
+  .cursor, .cursor-trail {
+    display: none !important; /* Hides the custom glowing dots */
+  }
+}
+
+@media (max-width: 900px) {
+  .project-card {
+    padding: 1.2rem !important; /* Shrinks the massive desktop padding */
+  }
+  .project-card.featured {
+    gap: 1.5rem !important; /* Shrinks the gap between elements */
+  }
+  .project-title {
+    font-size: 1.3rem !important; 
+  }
+}
+
 @media (max-width: 600px) {
   .chat-window {
-    width: calc(100vw - 2rem); /* Takes up full width minus 1rem margin on each side */
-    right: 1rem; /* Closer to the edge on mobile */
-    bottom: 5rem; /* Sits right above the toggle button */
-    height: 60vh; 
-    max-height: 500px;
-    z-index: 9999;
+    width: calc(100vw - 2rem) !important;
+    right: 1rem !important;
+    bottom: 4.5rem !important;
+    height: 420px !important; 
+    max-height: calc(100vh - 120px) !important; /* Safety boundary */
   }
   
   .chat-toggle-btn {
-    right: 1rem;
-    bottom: 1rem;
-    padding: 0.8rem 1.2rem;
-    font-size: 0.75rem;
-    z-index: 9999;
+    right: 1rem !important;
+    bottom: 1rem !important;
+    padding: 0.8rem 1.2rem !important;
+    font-size: 0.75rem !important;
   }
 
   .chat-input-area {
-    padding: 0.8rem;
+    padding: 0.8rem !important;
   }
   
   #chat-input {
-    padding: 0.6rem;
+    padding: 0.6rem !important;
   }
 }
