@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eiman — Data Scientist & Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- Scroll progress indicator -->
+<div class="scroll-indicator" id="scrollIndicator">
+  <div class="scroll-dot active" data-section="hero"></div>
+  <div class="scroll-dot" data-section="about"></div>
+  <div class="scroll-dot" data-section="skills"></div>
+  <div class="scroll-dot" data-section="projects"></div>
+  <div class="scroll-dot" data-section="certifications"></div>
+  <div class="scroll-dot" data-section="activities"></div>
+  <div class="scroll-dot" data-section="contact"></div>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-logo">Eiman.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:eimanj.512@gmail.com" class="nav-cta">Hire Me</a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">Data Scientist & Developer</div>
+    <h1 class="hero-name">
+      Ei<span class="italic">man</span>
+    </h1>
+    <p class="hero-title">BSc Data Science @ GIKI</p>
+    <p class="hero-desc">
+      Building intelligent systems at the intersection of data science, machine learning, and full-stack development. Turning complex data into meaningful decisions.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="mailto:eimanj.512@gmail.com" class="btn-ghost">
+        Get in touch <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="photo-frame floating">
+      <div class="photo-frame-border"></div>
+      <img src="static/my_photo.jpeg" alt="Eiman" height="300px" width=auto>
+    </div>
+  </div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Python</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Machine Learning</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Deep Learning</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Data Science</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Full Stack Dev</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> React JS</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Power BI</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> TensorFlow</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Computer Vision</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> SQL</span>
+    <!-- duplicate for infinite scroll -->
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Python</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Machine Learning</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Deep Learning</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Data Science</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Full Stack Dev</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> React JS</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Power BI</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> TensorFlow</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Computer Vision</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> SQL</span>
+  </div>
+</div>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <span class="section-number">01</span>
+  <div class="about-left">
+    <div class="section-label">About Me</div>
+    <h2 class="about-heading">Crafting data-driven <span class="accent">stories</span> through code</h2>
+    <p class="about-text">
+      I'm a Data Science student at GIK Institute with a passion for building intelligent systems that solve real problems. From training deep learning models to architecting full-stack applications, I thrive at the intersection of data and engineering.
+    </p>
+    <p class="about-text">
+      Currently on the Dean's Honor List for 5 consecutive semesters, I bring the same rigor to my projects that I bring to my academics — precise, thoughtful, and always pushing the boundary.
+    </p>
+    <div>
+      <span class="award-badge"> Dean's Honor List — 5 Semesters</span>
+    </div>
+    <div style="margin-top: 0.8rem;">
+    </div>
+  </div>
+
+  <div class="about-right">
+    <div class="edu-card">
+      <div class="edu-degree">BSc Data Science</div>
+      <div class="edu-school">Ghulam Ishaq Khan Institute</div>
+      <div class="edu-period">Sept 2023 – May 2027 · CGPA: 3.72/4.00</div>
+    </div>
+    <div class="edu-card" style="--accent: #f5a623;">
+      <div class="edu-degree" style="color: var(--accent2);">A-Level · 3A*</div>
+      <div class="edu-school">Beacon House School System</div>
+      <div class="edu-period">May 2023 · 100% Merit Scholar</div>
+    </div>
+    <div class="edu-card" >
+      <div class="edu-degree" style="color: var(--accent3);">O-Level · 7A* 1A</div>
+      <div class="edu-school">Rockford Cambridge School</div>
+      <div class="edu-period">May 2021</div>
+    </div>
+    <div style="font-size: 0.7rem; color: var(--muted); line-height: 1.8; border: 1px solid var(--border); padding: 1.5rem;">
+      📍 Hyderabad, Pakistan &nbsp;·&nbsp; Open to remote & internship opportunities
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section id="skills">
+  <div class="skills-header">
+    <div>
+      <div class="section-label">Expertise</div>
+      <h2 class="skills-heading">Skills &<br><em style="font-style:italic; color: var(--accent);">Technologies</em></h2>
+    </div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-cat">
+      <span class="skill-cat-icon"></span>
+      <div class="skill-cat-title">AI & Data Science</div>
+      <div class="skill-tags">
+        <span class="skill-tag accent">Deep Learning</span>
+        <span class="skill-tag accent">CNNs</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">K-Means / DBSCAN</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">TensorFlow / Keras</span>
+        <span class="skill-tag">Apriori</span>
+        <span class="skill-tag">RFM Analysis</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <span class="skill-cat-icon"></span>
+      <div class="skill-cat-title">Languages & Frameworks</div>
+      <div class="skill-tags">
+        <span class="skill-tag accent">Python</span>
+        <span class="skill-tag accent">C / C++</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React JS</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">PostgreSQL</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <span class="skill-cat-icon"></span>
+      <div class="skill-cat-title">Tools & Visualization</div>
+      <div class="skill-tags">
+        <span class="skill-tag accent">Power BI</span>
+        <span class="skill-tag accent">Tableau</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">Adobe Photoshop</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">UI/UX Design</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skill bars -->
+  <div class="skill-bar-section">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 4rem; margin-top: 3rem;">
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Python</span><span>95%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="--target-width: 95%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Machine Learning</span><span>88%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="--target-width: 88%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Deep Learning</span><span>82%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="--target-width: 82%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Full Stack Dev</span><span>78%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="--target-width: 78%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Data Visualization</span><span>85%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="--target-width: 85%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>C / C++</span><span>75%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="--target-width: 75%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label">My Work</div>
+      <h2 class="projects-heading">Selected<br><em style="font-style:italic; color: var(--accent);">Projects</em></h2>
+    </div>
+  </div>
+
+  <div class="project-grid">
+
+    <!-- Featured Project -->
+    <div class="project-card featured">
+      <div>
+        <div class="project-type">AI & Deep Learning</div>
+        <h3 class="project-title">Real-Time Facial Emotion Detection</h3>
+        <p class="project-desc">
+          A real-time computer vision system using Deep Learning (CNNs) to classify human emotions from facial expressions. Trained using Python, OpenCV, and TensorFlow/Keras, achieving high classification accuracy across multiple emotion categories.
+        </p>
+        <div class="project-techs">
+          <span class="project-tech">Python</span>
+          <span class="project-tech">TensorFlow</span>
+          <span class="project-tech">Keras</span>
+          <span class="project-tech">OpenCV</span>
+          <span class="project-tech">CNNs</span>
+        </div>
+      </div>
+ 
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-type">Data Mining</div>
+      <h3 class="project-title">Customer Purchase Behavior Analysis</h3>
+      <p class="project-desc">
+        Large-scale retail data analysis using RFM analysis, K-Means clustering for customer segmentation, and the Apriori algorithm for association rules and product recommendations.
+      </p>
+      <div class="project-techs">
+        <span class="project-tech">Python</span>
+        <span class="project-tech">Pandas</span>
+        <span class="project-tech">NumPy</span>
+        <span class="project-tech">K-Means</span>
+        <span class="project-tech">Apriori</span>
+      </div>
+
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-type">Full Stack Web</div>
+      <h3 class="project-title">Smart Classroom Room Requisition App</h3>
+      <p class="project-desc">
+        A dynamic web application for room booking management built with Flask & PostgreSQL. Features user authentication, role-based access control, and admin workflows.
+      </p>
+      <div class="project-techs">
+        <span class="project-tech">Python</span>
+        <span class="project-tech">Flask</span>
+        <span class="project-tech">PostgreSQL</span>
+        <span class="project-tech">HTML/CSS</span>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card" style="grid-column: span 2;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <div>
+          <div class="project-type">DSA · C++</div>
+          <h3 class="project-title">Terminal Sudoku Solver</h3>
+          <p class="project-desc">
+            A terminal-based Sudoku game using backtracking algorithms for efficient puzzle solving. Designed complex data structures to manage grid state and validate user inputs in real-time.
+          </p>
+          <div class="project-techs">
+            <span class="project-tech">C++</span>
+            <span class="project-tech">Backtracking</span>
+            <span class="project-tech">Data Structures</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CERTIFICATIONS ─── -->
+<section id="certifications">
+  <div class="section-label">Credentials</div>
+  <h2 class="skills-heading">Certifi<em style="font-style:italic; color: var(--accent);">cations</em></h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-org">DeepLearning.AI</div>
+      <div class="cert-name">Supervised Machine Learning: Regression & Classification</div>
+      <div class="cert-date">Aug 2025</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-org">IBM</div>
+      <div class="cert-name">Developing AI Applications with Python and Flask</div>
+      <div class="cert-date">Jul 2025</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-org">Meta</div>
+      <div class="cert-name">Introduction to Data Analytics</div>
+      <div class="cert-date">Jul 2025</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-org">Arizona State University</div>
+      <div class="cert-name">Introduction to Machine Learning with Python</div>
+      <div class="cert-date">Jul 2025</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="contact-orb"></div>
+  <div class="section-label" style="justify-content: center;">Let's Connect</div>
+  <h2 class="contact-heading">
+    Let's<br>build something<br><span class="italic">great.</span>
+  </h2>
+  <p class="contact-sub">
+    Open to internships, research collaborations, and interesting projects. Always happy to chat about data, AI, or anything in between.
+  </p>
+  <div class="contact-links">
+    <a href="mailto:eimanj.512@gmail.com" class="contact-link">
+      <span>✉</span><span>eimanj.512@gmail.com</span>
+    </a>
+    <a href="https://www.linkedin.com/in/eiman-j" target="_blank" class="contact-link">
+      <span>in</span><span>LinkedIn</span>
+    </a>
+    <!-- ════════════════════════════════════════════════════
+         🔗 ADD YOUR GITHUB PROFILE LINK HERE
+         ════════════════════════════════════════════════════ -->
+    <a href="https://github.com/Eiman-j" target="_blank" class="contact-link">
+      <span>⌥</span><span>GitHub</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 Eiman · Hyderabad, Pakistan</span>
+  <span style="letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.6rem;">BSc Data Science · GIKI</span>
+  <span>Crafted with 🖤</span>
+</footer>
+
+<script>
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const trail = document.getElementById('cursorTrail');
+  let mouseX = 0, mouseY = 0;
+  let trailX = 0, trailY = 0;
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  });
+
+  // Smooth trail
+  function animateTrail() {
+    trailX += (mouseX - trailX) * 0.12;
+    trailY += (mouseY - trailY) * 0.12;
+    trail.style.left = trailX + 'px';
+    trail.style.top = trailY + 'px';
+    requestAnimationFrame(animateTrail);
+  }
+  animateTrail();
+
+  // Cursor enlarge on hover
+  document.querySelectorAll('a, button, .project-card, .edu-card, .skill-cat').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '20px';
+      cursor.style.height = '20px';
+      trail.style.width = '60px';
+      trail.style.height = '60px';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '12px';
+      cursor.style.height = '12px';
+      trail.style.width = '36px';
+      trail.style.height = '36px';
+    });
+  });
+
+  // Intersection Observer — section reveal
+  const sections = document.querySelectorAll('section');
+  const dots = document.querySelectorAll('.scroll-dot');
+  const sectionIds = ['hero','about','skills','projects','certifications','activities','contact'];
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // Update scroll dots
+        const idx = sectionIds.indexOf(entry.target.id);
+        if (idx !== -1) {
+          dots.forEach(d => d.classList.remove('active'));
+          if (dots[idx]) dots[idx].classList.add('active');
+        }
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(s => {
+    if (s.id !== 'hero') observer.observe(s);
+    else s.classList.add('visible');
+  });
+
+  // Skill bar animation
+  const barObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+          bar.classList.add('animate');
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const skillsSection = document.getElementById('skills');
+  if (skillsSection) barObserver.observe(skillsSection);
+
+  // Parallax on hero bg
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    document.querySelector('.hero-bg-grid').style.transform =
+      `translateY(${scrollY * 0.3}px)`;
+  });
+
+  // Magnetic buttons
+  document.querySelectorAll('.btn-primary, .nav-cta, .contact-link').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+    });
+  });
+</script>
+<!-- ─── CHATBOT UI ─── -->
+<button id="chat-toggle" class="chat-toggle-btn">
+  💬 Chat with my clone bot!
+</button>
+
+<div id="chat-window" class="chat-window" style="display: none;">
+  <div class="chat-header">
+    <span>Eiman (Clone Bot)</span>
+    <button id="chat-close" class="chat-close-btn">×</button>
+  </div>
+  
+  <div id="chat-messages" class="chat-messages">
+    <div class="bot-message-class">
+      <strong>Eiman (Clone Bot)</strong> 
+      Hi! I'm Eiman's AI clone. Ask me anything about her projects, skills, or type "MESSAGE: [your text]" to leave her a note!
+    </div>
+  </div>
+  
+  <div class="chat-input-area">
+    <input type="text" id="chat-input" placeholder="Ask me anything..." autocomplete="off" />
+    <button id="chat-send">Send</button>
+  </div>
+</div>
+<script src="static/script.js"></script>
+</body>
+</html>
